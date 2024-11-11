@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #90c0e6;
+  position: relative;
+  height: 70px ;
+  
+}
+nav ul{
+  display: flex;
+  gap: 40px;
+  color: white;
+  
+}
+nav ul li{
+  font-size: 23px;
+font-weight: bolder;
+font-weight: 700;
+}
+nav ul li:hover{
+  filter: drop-shadow(1px 0px 5px #14769c);
+  transform:scale(.98);
+}
+.menu-icon{
+  display: none;
+  color: white;
+  font-size: 30px;
+}
+
+.phonenav{
+  display: none;
+}
+@media (max-width:480px){
+  
+  nav{
+    height: 60px;
+    
+  }
+  nav ul{
+      position: absolute;
+      top: 60px;
+      left: 0%;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #90c0e6;
+  }
+  nav ul li{
+      padding: 20px;
+  }
+  .menu-icon{
+      display: block;
+      
+  }
+  .mainnav{
+    display: none;
+  }
+  
+}
+
+
+/************************ form****************** */
+
+
